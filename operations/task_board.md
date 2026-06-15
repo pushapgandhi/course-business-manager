@@ -10,7 +10,7 @@ Use it to build the project one work stream at a time.
 
 | Task | Work Stream | Priority | Status | Required Tool | Next Action |
 |---|---|---|---|---|---|
-| Build Operations & Future Task Planning work stream | Operations | High | Not started | Task board, checklist, calendar, docs, approval tracker | Create backlog, priorities, timeline, owners, statuses, and next actions |
+| Build Operations & Future Task Planning work stream | Operations | High | In progress | Task board, checklist, calendar, docs, approval tracker | Create backlog, priorities, timeline, owners, statuses, and next actions |
 | Build Communication Drafting work stream | Communication | High | Not started | Email templates, WhatsApp templates, LinkedIn DM templates, CRM notes, review checklist | Create draft-only message templates and review workflow |
 | Build Student Support & Community work stream | Student Support | Medium | Not started | Community platform, feedback forms, support reply templates, testimonial forms | Create support reply, engagement, feedback, and testimonial workflows |
 | Build Curriculum & Course Planning work stream | Curriculum | Medium | Not started | Course outline doc, module planner, learning outcome framework, schedule planner | Create course outline, module, lesson, assignment, and capstone workflow |

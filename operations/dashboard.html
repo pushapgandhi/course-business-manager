@@ -56,7 +56,7 @@
 
     .summary {
       display: grid;
-      grid-template-columns: repeat(4, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 14px;
       margin-bottom: 20px;
     }
@@ -88,6 +88,30 @@
       border-left: 4px solid var(--blue);
       padding: 16px 18px;
       margin-bottom: 20px;
+    }
+
+    .status-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .status-item {
+      padding: 14px 16px;
+    }
+
+    .status-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .status-value {
+      font-size: 15px;
+      font-weight: 700;
     }
 
     .next-task h2,
@@ -205,6 +229,7 @@
       }
 
       .summary,
+      .status-strip,
       .kanban {
         grid-template-columns: 1fr;
       }
@@ -228,12 +253,31 @@
         <div class="metric-value" id="doneTasks">0</div>
       </div>
       <div class="metric">
+        <div class="metric-label">In Progress</div>
+        <div class="metric-value" id="inProgressTasks">0</div>
+      </div>
+      <div class="metric">
         <div class="metric-label">Remaining</div>
         <div class="metric-value" id="remainingTasks">0</div>
       </div>
       <div class="metric">
         <div class="metric-label">High Priority</div>
         <div class="metric-value" id="highPriorityTasks">0</div>
+      </div>
+    </section>
+
+    <section class="status-strip" aria-label="Operations status">
+      <div class="panel status-item">
+        <div class="status-label">Active Stream</div>
+        <div class="status-value">Operations & Future Task Planning</div>
+      </div>
+      <div class="panel status-item">
+        <div class="status-label">Current Focus</div>
+        <div class="status-value">Backlog, priorities, timelines, and owners</div>
+      </div>
+      <div class="panel status-item">
+        <div class="status-label">Deployment Status</div>
+        <div class="status-value">Ready for GitHub Pages update</div>
       </div>
     </section>
 
@@ -268,7 +312,7 @@
         task: "Build Operations & Future Task Planning work stream",
         workStream: "Operations",
         priority: "High",
-        status: "Not started",
+        status: "In progress",
         requiredTool: "Task board, checklist, calendar, docs, approval tracker",
         nextAction: "Create backlog, priorities, timeline, owners, statuses, and next actions"
       },
@@ -370,10 +414,12 @@
     function renderSummary() {
       const total = tasks.length;
       const done = tasks.filter((task) => task.status === "Done").length;
+      const inProgress = tasks.filter((task) => task.status === "In progress").length;
       const high = tasks.filter((task) => task.priority === "High" && task.status !== "Done").length;
 
       document.getElementById("totalTasks").textContent = total;
       document.getElementById("doneTasks").textContent = done;
+      document.getElementById("inProgressTasks").textContent = inProgress;
       document.getElementById("remainingTasks").textContent = total - done;
       document.getElementById("highPriorityTasks").textContent = high;
     }
