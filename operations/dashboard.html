@@ -124,6 +124,23 @@
       margin: 4px 0;
     }
 
+    .ops-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .ops-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--text);
+    }
+
+    .ops-list li {
+      margin-bottom: 8px;
+    }
+
     .kanban {
       display: grid;
       grid-template-columns: repeat(4, minmax(190px, 1fr));
@@ -229,6 +246,7 @@
       }
 
       .summary,
+      .ops-grid,
       .status-strip,
       .kanban {
         grid-template-columns: 1fr;
@@ -269,21 +287,36 @@
     <section class="status-strip" aria-label="Operations status">
       <div class="panel status-item">
         <div class="status-label">Active Stream</div>
-        <div class="status-value">Operations & Future Task Planning</div>
+        <div class="status-value">Communication Drafting</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Focus</div>
-        <div class="status-value">Backlog, priorities, timelines, and owners</div>
+        <div class="status-value">Ready to build draft-only communication workflows</div>
       </div>
       <div class="panel status-item">
-        <div class="status-label">Deployment Status</div>
-        <div class="status-value">Ready for GitHub Pages update</div>
+        <div class="status-label">Current Milestone</div>
+        <div class="status-value">Operations v1 approved</div>
       </div>
     </section>
 
     <section class="panel next-task" aria-label="Next recommended task">
       <h2>Next Recommended Task</h2>
       <div id="nextTask"></div>
+    </section>
+
+    <section class="ops-grid" aria-label="Operations summary">
+      <div class="panel">
+        <h2>Risks & Dependencies</h2>
+        <ul class="ops-list" id="riskList"></ul>
+      </div>
+      <div class="panel">
+        <h2>Approvals Needed</h2>
+        <ul class="ops-list" id="approvalList"></ul>
+      </div>
+      <div class="panel">
+        <h2>Recent Updates</h2>
+        <ul class="ops-list" id="updateList"></ul>
+      </div>
     </section>
 
     <section class="kanban" id="kanban" aria-label="Task kanban board"></section>
@@ -312,9 +345,9 @@
         task: "Build Operations & Future Task Planning work stream",
         workStream: "Operations",
         priority: "High",
-        status: "In progress",
+        status: "Done",
         requiredTool: "Task board, checklist, calendar, docs, approval tracker",
-        nextAction: "Create backlog, priorities, timeline, owners, statuses, and next actions"
+        nextAction: "Operations v1 approved; maintain the board during weekly reviews"
       },
       {
         task: "Build Communication Drafting work stream",
@@ -400,6 +433,18 @@
 
     const statuses = ["Not started", "In progress", "Waiting", "Done"];
     const priorityRank = { High: 1, Medium: 2, Low: 3 };
+    const risks = [
+      "GitHub Pages publishing not confirmed.",
+      "Dashboard content is manually maintained and should be checked against the task board."
+    ];
+    const approvals = [
+      "Confirm the next work stream after Operations v1.",
+      "Approve when Communication Drafting should move from queued to active."
+    ];
+    const updates = [
+      "2026-06-19: User approved Operations v1 as complete. Communication Drafting is now the next recommended work stream.",
+      "2026-06-15: Added lightweight Operations v1 workflow, task board sections, and dashboard summary."
+    ];
 
     function priorityClass(priority) {
       return `priority-${priority.toLowerCase()}`;
@@ -481,8 +526,17 @@
       `).join("");
     }
 
+    function renderList(id, items) {
+      document.getElementById(id).innerHTML = items
+        .map((item) => `<li>${item}</li>`)
+        .join("");
+    }
+
     renderSummary();
     renderNextTask();
+    renderList("riskList", risks);
+    renderList("approvalList", approvals);
+    renderList("updateList", updates);
     renderKanban();
     renderTable();
   </script>

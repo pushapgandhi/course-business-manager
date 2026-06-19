@@ -6,11 +6,21 @@ This task board lists every Course Business Manager Agent work stream that needs
 
 Use it to build the project one work stream at a time.
 
+## Active Sprint / Current Focus
+
+| Field | Current Value |
+|---|---|
+| Active Work Stream | Communication Drafting |
+| Current Milestone | Operations v1 approved |
+| Current Focus | Ready to build draft-only email, WhatsApp, LinkedIn, CRM note, and review workflows |
+| Owner | User + Course Business Manager Agent |
+| Target Outcome | A simple project-management system that can be maintained by editing Markdown |
+
 ## Current Task Board
 
 | Task | Work Stream | Priority | Status | Required Tool | Next Action |
 |---|---|---|---|---|---|
-| Build Operations & Future Task Planning work stream | Operations | High | In progress | Task board, checklist, calendar, docs, approval tracker | Create backlog, priorities, timeline, owners, statuses, and next actions |
+| Build Operations & Future Task Planning work stream | Operations | High | Done | Task board, checklist, calendar, docs, approval tracker | Operations v1 approved; maintain the board during weekly reviews |
 | Build Communication Drafting work stream | Communication | High | Not started | Email templates, WhatsApp templates, LinkedIn DM templates, CRM notes, review checklist | Create draft-only message templates and review workflow |
 | Build Student Support & Community work stream | Student Support | Medium | Not started | Community platform, feedback forms, support reply templates, testimonial forms | Create support reply, engagement, feedback, and testimonial workflows |
 | Build Curriculum & Course Planning work stream | Curriculum | Medium | Not started | Course outline doc, module planner, learning outcome framework, schedule planner | Create course outline, module, lesson, assignment, and capstone workflow |
@@ -32,7 +42,7 @@ Create the operating structure for the project before starting the more complex 
 
 | Order | Task | Output | Done |
 |---:|---|---|---|
-| 1 | Build Operations & Future Task Planning work stream | Working operations task system | No |
+| 1 | Build Operations & Future Task Planning work stream | Working operations task system | Yes |
 | 2 | Build Communication Drafting work stream | Draft-only communication system | No |
 | 3 | Build Student Support & Community work stream | Student support and engagement system | No |
 | 4 | Build Curriculum & Course Planning work stream | Course planning system | No |
@@ -43,6 +53,27 @@ Create the operating structure for the project before starting the more complex 
 | 9 | Build Course Strategy & Market Research work stream | Research and positioning system | No |
 | 10 | Build Analytics & Business Intelligence work stream | Reporting and insight system | No |
 | 11 | Build Agent-Building & Improvement work stream | Agent improvement system | No |
+
+## Risks & Dependencies
+
+| Item | Impact | Owner | Next Action | Status |
+|---|---|---|---|---|
+| GitHub Pages publishing not confirmed | Dashboard may not be available as a public link yet | User | Enable Pages after the files are ready | Open |
+| Dashboard content is manually maintained | Dashboard can drift from the Markdown task board | Course Business Manager Agent | Compare dashboard and task board during each update | Open |
+
+## Decisions / Approvals Needed
+
+| Decision | Needed For | Owner | Status |
+|---|---|---|---|
+| Approve Operations v1 as the first completed milestone | Move from operations setup into the next work stream | User | Approved |
+| Confirm next work stream after Operations v1 | Start Communication Drafting or adjust the roadmap | User | Pending |
+
+## Recent Updates
+
+| Date | Update |
+|---|---|
+| 2026-06-19 | User approved Operations v1 as complete. Communication Drafting is now the next recommended work stream. |
+| 2026-06-15 | Added lightweight Operations v1 plan covering workflow, task board updates, risks, approvals, and dashboard summary. |
 
 ## Status Rules
 
@@ -63,6 +94,6 @@ Use these priorities:
 
 ## Next Action
 
-Start with: **Build Operations & Future Task Planning work stream**.
+Start with: **Build Communication Drafting work stream**.
 
-The first output should be a complete operations workflow for maintaining project tasks, priorities, timelines, owners, statuses, approvals, risks, dependencies, and next actions.
+The first output should be a draft-only communication workflow with reusable email, WhatsApp, LinkedIn DM, CRM note, and review templates.
