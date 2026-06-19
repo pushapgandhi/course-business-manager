@@ -51,7 +51,11 @@ Examples:
 - changing the project structure
 - marking a major work stream as Done
 
-Do not send messages, publish sensitive data, or make business decisions without user approval.
+Do not send messages, update calendar events, publish sensitive data, or make business decisions without user approval.
+
+Communication tasks may send through an available channel only after the user approves the final draft, recipient, channel, and sending method.
+
+Scheduling tasks may create, update, reschedule, or cancel calendar events only after the user approves the final meeting details.
 
 ## Risk and Dependency Rules
 
@@ -81,7 +85,11 @@ When project progress changes:
 
 Operations v1 is approved and complete.
 
-The next recommended work stream is Communication Drafting.
+Communication Agent v1 is complete.
+
+The next recommended work stream is Scheduling & Calendar Agent.
+
+Scheduling & Calendar is a separate work stream, not a subfeature inside Communication.
 
 Operations v1 remains complete as long as:
 

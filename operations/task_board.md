@@ -10,9 +10,9 @@ Use it to build the project one work stream at a time.
 
 | Field | Current Value |
 |---|---|
-| Active Work Stream | Communication Drafting |
-| Current Milestone | Operations v1 approved |
-| Current Focus | Ready to build draft-only email, WhatsApp, LinkedIn, CRM note, and review workflows |
+| Active Work Stream | Scheduling & Calendar Agent |
+| Current Milestone | Communication Agent v1 complete |
+| Current Focus | Build calendar availability, conflict review, meeting update, reminder, and prep workflows |
 | Owner | User + Course Business Manager Agent |
 | Target Outcome | A simple project-management system that can be maintained by editing Markdown |
 
@@ -21,7 +21,8 @@ Use it to build the project one work stream at a time.
 | Task | Work Stream | Priority | Status | Required Tool | Next Action |
 |---|---|---|---|---|---|
 | Build Operations & Future Task Planning work stream | Operations | High | Done | Task board, checklist, calendar, docs, approval tracker | Operations v1 approved; maintain the board during weekly reviews |
-| Build Communication Drafting work stream | Communication | High | Not started | Email templates, WhatsApp templates, LinkedIn DM templates, CRM notes, review checklist | Create draft-only message templates and review workflow |
+| Build Communication Agent v1 work stream | Communication | High | Done | Email templates, WhatsApp templates, LinkedIn DM templates, CRM notes, approval checklist, sending tools | Communication Agent v1 implemented; use workflow, intake form, templates, and approval checklist |
+| Build Scheduling & Calendar Agent work stream | Scheduling | High | Not started | Calendar, availability checker, conflict review, invite templates, reminder tracker | Create scheduling, reschedule, cancellation, reminder, and meeting-prep workflow |
 | Build Student Support & Community work stream | Student Support | Medium | Not started | Community platform, feedback forms, support reply templates, testimonial forms | Create support reply, engagement, feedback, and testimonial workflows |
 | Build Curriculum & Course Planning work stream | Curriculum | Medium | Not started | Course outline doc, module planner, learning outcome framework, schedule planner | Create course outline, module, lesson, assignment, and capstone workflow |
 | Build Lesson Content & Teaching Scripts work stream | Lesson Content | Medium | Not started | Lesson script template, examples library, video script doc, teaching notes | Create lesson script, class flow, examples, recap, and homework workflow |
@@ -43,16 +44,17 @@ Create the operating structure for the project before starting the more complex 
 | Order | Task | Output | Done |
 |---:|---|---|---|
 | 1 | Build Operations & Future Task Planning work stream | Working operations task system | Yes |
-| 2 | Build Communication Drafting work stream | Draft-only communication system | No |
-| 3 | Build Student Support & Community work stream | Student support and engagement system | No |
-| 4 | Build Curriculum & Course Planning work stream | Course planning system | No |
-| 5 | Build Lesson Content & Teaching Scripts work stream | Lesson creation system | No |
-| 6 | Build Learning Materials & Assessment work stream | Materials and assessment system | No |
-| 7 | Build Marketing & Content Repurposing work stream | Marketing content system | No |
-| 8 | Build Sales Funnel & Offer work stream | Sales conversion system | No |
-| 9 | Build Course Strategy & Market Research work stream | Research and positioning system | No |
-| 10 | Build Analytics & Business Intelligence work stream | Reporting and insight system | No |
-| 11 | Build Agent-Building & Improvement work stream | Agent improvement system | No |
+| 2 | Build Communication Agent v1 work stream | Approval-based communication system | Yes |
+| 3 | Build Scheduling & Calendar Agent work stream | Calendar and meeting management system | No |
+| 4 | Build Student Support & Community work stream | Student support and engagement system | No |
+| 5 | Build Curriculum & Course Planning work stream | Course planning system | No |
+| 6 | Build Lesson Content & Teaching Scripts work stream | Lesson creation system | No |
+| 7 | Build Learning Materials & Assessment work stream | Materials and assessment system | No |
+| 8 | Build Marketing & Content Repurposing work stream | Marketing content system | No |
+| 9 | Build Sales Funnel & Offer work stream | Sales conversion system | No |
+| 10 | Build Course Strategy & Market Research work stream | Research and positioning system | No |
+| 11 | Build Analytics & Business Intelligence work stream | Reporting and insight system | No |
+| 12 | Build Agent-Building & Improvement work stream | Agent improvement system | No |
 
 ## Risks & Dependencies
 
@@ -66,13 +68,16 @@ Create the operating structure for the project before starting the more complex 
 | Decision | Needed For | Owner | Status |
 |---|---|---|---|
 | Approve Operations v1 as the first completed milestone | Move from operations setup into the next work stream | User | Approved |
-| Confirm next work stream after Operations v1 | Start Communication Drafting or adjust the roadmap | User | Pending |
+| Confirm next work stream after Operations v1 | Start Communication Agent v1 or adjust the roadmap | User | Approved |
+| Confirm Scheduling & Calendar as a separate agent | Keep calendar updates separate from communication drafting | User | Approved |
 
 ## Recent Updates
 
 | Date | Update |
 |---|---|
-| 2026-06-19 | User approved Operations v1 as complete. Communication Drafting is now the next recommended work stream. |
+| 2026-06-19 | Implemented Communication Agent v1 workflow, intake form, reusable templates, approval checklist, and routing tests. |
+| 2026-06-19 | Updated roadmap to Communication Agent v1 with approval-based sending and added Scheduling & Calendar as a separate future work stream. |
+| 2026-06-19 | User approved Operations v1 as complete. Communication Agent v1 is now the next recommended work stream. |
 | 2026-06-15 | Added lightweight Operations v1 plan covering workflow, task board updates, risks, approvals, and dashboard summary. |
 
 ## Status Rules
@@ -94,6 +99,6 @@ Use these priorities:
 
 ## Next Action
 
-Start with: **Build Communication Drafting work stream**.
+Start with: **Build Scheduling & Calendar Agent work stream**.
 
-The first output should be a draft-only communication workflow with reusable email, WhatsApp, LinkedIn DM, CRM note, and review templates.
+The first output should be a calendar workflow for availability checks, conflict review, meeting invites, reschedules, cancellations, reminders, and meeting-prep notes.

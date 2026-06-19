@@ -287,15 +287,15 @@
     <section class="status-strip" aria-label="Operations status">
       <div class="panel status-item">
         <div class="status-label">Active Stream</div>
-        <div class="status-value">Communication Drafting</div>
+        <div class="status-value">Scheduling & Calendar Agent</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Focus</div>
-        <div class="status-value">Ready to build draft-only communication workflows</div>
+        <div class="status-value">Calendar availability, conflicts, updates, reminders, and prep</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Milestone</div>
-        <div class="status-value">Operations v1 approved</div>
+        <div class="status-value">Communication Agent v1 complete</div>
       </div>
     </section>
 
@@ -350,12 +350,20 @@
         nextAction: "Operations v1 approved; maintain the board during weekly reviews"
       },
       {
-        task: "Build Communication Drafting work stream",
+        task: "Build Communication Agent v1 work stream",
         workStream: "Communication",
         priority: "High",
+        status: "Done",
+        requiredTool: "Email templates, WhatsApp templates, LinkedIn DM templates, CRM notes, approval checklist, sending tools",
+        nextAction: "Communication Agent v1 implemented; use workflow, intake form, templates, and approval checklist"
+      },
+      {
+        task: "Build Scheduling & Calendar Agent work stream",
+        workStream: "Scheduling",
+        priority: "High",
         status: "Not started",
-        requiredTool: "Email templates, WhatsApp templates, LinkedIn DM templates, CRM notes, review checklist",
-        nextAction: "Create draft-only message templates and review workflow"
+        requiredTool: "Calendar, availability checker, conflict review, invite templates, reminder tracker",
+        nextAction: "Create scheduling, reschedule, cancellation, reminder, and meeting-prep workflow"
       },
       {
         task: "Build Student Support & Community work stream",
@@ -438,11 +446,13 @@
       "Dashboard content is manually maintained and should be checked against the task board."
     ];
     const approvals = [
-      "Confirm the next work stream after Operations v1.",
-      "Approve when Communication Drafting should move from queued to active."
+      "Communication Agent v1 confirmed as the next work stream.",
+      "Scheduling & Calendar confirmed as a separate future agent."
     ];
     const updates = [
-      "2026-06-19: User approved Operations v1 as complete. Communication Drafting is now the next recommended work stream.",
+      "2026-06-19: Implemented Communication Agent v1 workflow, intake form, reusable templates, approval checklist, and routing tests.",
+      "2026-06-19: Updated roadmap to Communication Agent v1 with approval-based sending and added Scheduling & Calendar as a separate future work stream.",
+      "2026-06-19: User approved Operations v1 as complete. Communication Agent v1 is now the next recommended work stream.",
       "2026-06-15: Added lightweight Operations v1 workflow, task board sections, and dashboard summary."
     ];
 
