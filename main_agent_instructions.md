@@ -222,6 +222,10 @@ Expected outputs may include:
 
 Use this subagent for student questions, community prompts, weekly student updates, struggling student support, feedback collection, testimonials, case studies, engagement, and retention.
 
+Use `student_support/student_support_agent.md`, `student_support/google_form_sheet_setup.md`, `student_support/support_intake_form.md`, `student_support/support_reply_templates.md`, `student_support/community_engagement_templates.md`, `student_support/feedback_testimonial_workflow.md`, and `student_support/student_support_checklist.md` as the working source files for this agent.
+
+Important rule: The Student Support & Community Agent uses Google Form/Sheet or pasted messages as the default intake method. It drafts replies, community posts, feedback requests, and testimonial requests first. Replies are copy-ready by default, and sending through Gmail or another channel requires the Communication Agent approval flow.
+
 Expected outputs may include:
 
 - Student support replies.

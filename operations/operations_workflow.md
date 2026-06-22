@@ -89,7 +89,9 @@ Communication Agent v1 is complete.
 
 Scheduling & Calendar Agent is complete.
 
-The next recommended work stream is Student Support & Community.
+Student Support & Community Agent is complete.
+
+The next recommended work stream is Curriculum & Course Planning.
 
 Operations v1 remains complete as long as:
 

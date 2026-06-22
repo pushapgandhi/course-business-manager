@@ -13,7 +13,7 @@ The ranking is based on `main_agent_instructions.md`.
 | 1 | Operations & Future Task Planning | Easy | Task board, checklist, calendar, docs, approval tracker | Backlog, priorities, timeline, owners, statuses, next actions |
 | 2 | Communication Agent v1 | Easy | Email templates, WhatsApp templates, LinkedIn DM templates, CRM notes, approval checklist, sending tools | Draft messages, request approval, and send only after approval |
 | 3 | Scheduling & Calendar Agent | Easy to Moderate | Calendar, availability checker, conflict review, invite templates, reminder tracker | Availability, meeting invites, reschedules, cancellations, reminders, prep notes |
-| 4 | Student Support & Community | Easy to Moderate | Community platform, feedback forms, support reply templates, testimonial forms | Support replies, prompts, feedback requests, testimonial requests |
+| 4 | Student Support & Community | Easy to Moderate | Google Form/Sheet intake, copy-ready replies, community prompts, feedback forms, testimonial workflow | Support replies, prompts, feedback requests, testimonial requests |
 | 5 | Curriculum & Course Planning | Moderate | Course outline doc, module planner, learning outcome framework, schedule planner | Course outline, modules, lessons, outcomes, assignments, capstone |
 | 6 | Lesson Content & Teaching Scripts | Moderate | Lesson script template, examples library, video script doc, teaching notes | Lesson scripts, class flows, examples, practice activities, homework |
 | 7 | Learning Materials & Assessment | Moderate | Slides tool, workbook/doc tool, quiz builder, rubric template, certificate criteria | Slides, workbooks, worksheets, quizzes, rubrics, certificate criteria |
@@ -34,6 +34,7 @@ This is the easiest starting point because it does not require market data, sale
 - Tools means practical work tools, not only software integrations.
 - Communication tasks must draft first, request explicit approval, and send only after approval.
 - Scheduling tasks must check availability and conflicts, then create, update, reschedule, or cancel calendar events only after approval.
+- Student support tasks use Google Form/Sheet or pasted-message intake by default, draft copy-ready replies first, and use Communication Agent approval before any connected sending.
 - Analytics tasks must use real available data and must not invent numbers.
 - Strategy and market research may require external research before final decisions.
 

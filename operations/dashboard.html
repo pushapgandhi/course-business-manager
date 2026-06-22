@@ -287,15 +287,15 @@
     <section class="status-strip" aria-label="Operations status">
       <div class="panel status-item">
         <div class="status-label">Active Stream</div>
-        <div class="status-value">Student Support & Community</div>
+        <div class="status-value">Curriculum & Course Planning</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Focus</div>
-        <div class="status-value">Ready to build support, engagement, feedback, and testimonials</div>
+        <div class="status-value">Ready to build course outline, module, lesson, assignment, and capstone workflow</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Milestone</div>
-        <div class="status-value">Scheduling & Calendar Agent complete</div>
+        <div class="status-value">Student Support & Community Agent complete</div>
       </div>
     </section>
 
@@ -369,9 +369,9 @@
         task: "Build Student Support & Community work stream",
         workStream: "Student Support",
         priority: "Medium",
-        status: "Not started",
-        requiredTool: "Community platform, feedback forms, support reply templates, testimonial forms",
-        nextAction: "Create support reply, engagement, feedback, and testimonial workflows"
+        status: "Done",
+        requiredTool: "Google Form/Sheet intake, support reply templates, community prompts, feedback forms, testimonial workflow",
+        nextAction: "Student Support & Community Agent implemented; create the live Google Form/Sheet when ready to receive student questions"
       },
       {
         task: "Build Curriculum & Course Planning work stream",
@@ -443,13 +443,16 @@
     const priorityRank = { High: 1, Medium: 2, Low: 3 };
     const risks = [
       "GitHub Pages publishing not confirmed.",
-      "Dashboard content is manually maintained and should be checked against the task board."
+      "Dashboard content is manually maintained and should be checked against the task board.",
+      "Live student support form not created yet; create the Google Form and linked Sheet from the setup guide."
     ];
     const approvals = [
-      "Communication Agent v1 confirmed as the next work stream.",
-      "Scheduling & Calendar confirmed as a separate future agent."
+      "Communication Agent v1 approved.",
+      "Scheduling & Calendar approved as a separate agent.",
+      "Student Support v1 platform approved: Google Form/Sheet intake with manual replies or Gmail approval handoff."
     ];
     const updates = [
+      "2026-06-22: Implemented Student Support & Community Agent with Google Form/Sheet intake, copy-ready replies, community prompts, feedback collection, testimonial workflow, and approval checklist.",
       "2026-06-22: Updated Scheduling & Calendar workflow so scheduled or rescheduled meetings also send a separate recipient email with the agenda and meeting link.",
       "2026-06-19: Implemented Scheduling & Calendar Agent workflow, intake form, templates, approval checklist, and availability rules.",
       "2026-06-19: Implemented Communication Agent v1 workflow, intake form, reusable templates, approval checklist, and routing tests.",
