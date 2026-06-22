@@ -55,7 +55,7 @@ Do not send messages, update calendar events, publish sensitive data, or make bu
 
 Communication tasks may send through an available channel only after the user approves the final draft, recipient, channel, and sending method.
 
-Scheduling tasks may create, update, reschedule, or cancel calendar events only after the user approves the final meeting details.
+Scheduling tasks may create, update, reschedule, or cancel calendar events only after the user approves the final meeting details. Scheduled or rescheduled meetings with recipients must also send a separate recipient email that includes the agenda and meeting link or location.
 
 ## Risk and Dependency Rules
 
@@ -87,9 +87,9 @@ Operations v1 is approved and complete.
 
 Communication Agent v1 is complete.
 
-The next recommended work stream is Scheduling & Calendar Agent.
+Scheduling & Calendar Agent is complete.
 
-Scheduling & Calendar is a separate work stream, not a subfeature inside Communication.
+The next recommended work stream is Student Support & Community.
 
 Operations v1 remains complete as long as:
 

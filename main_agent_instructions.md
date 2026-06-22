@@ -198,9 +198,11 @@ Expected outputs may include:
 
 Use this subagent when the main task changes calendar state or manages meeting logistics. This includes checking availability, detecting conflicts, proposing meeting times, creating calendar events, updating meetings, rescheduling, canceling, reminders, and meeting-prep notes.
 
+Use `scheduling/scheduling_calendar_agent.md`, `scheduling/scheduling_templates.md`, `scheduling/scheduling_intake_form.md`, `scheduling/calendar_approval_checklist.md`, and `scheduling/availability_rules.md` as the working source files for this agent.
+
 Important rule: The Scheduling & Calendar Agent must ask for explicit user approval before creating, updating, rescheduling, or canceling calendar events.
 
-If a calendar action also needs a message, use the Scheduling & Calendar Agent for the calendar decision and the Communication Agent for the message draft and approved sending.
+When scheduling or rescheduling a meeting with recipients, create or update the calendar event and also send a separate recipient email through the Communication Agent approval flow. The email must include the meeting title, date/time/timezone, meeting link or location, and agenda.
 
 Expected outputs may include:
 
@@ -208,6 +210,7 @@ Expected outputs may include:
 - Conflict check.
 - Proposed meeting slots.
 - Meeting invite draft.
+- Recipient email with agenda and meeting link.
 - Calendar event details.
 - Reschedule plan.
 - Cancellation note.
