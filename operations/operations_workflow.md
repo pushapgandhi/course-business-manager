@@ -91,7 +91,15 @@ Scheduling & Calendar Agent is complete.
 
 Student Support & Community Agent is complete.
 
-The next recommended work stream is Curriculum & Course Planning.
+Curriculum & Course Planning Agent is complete.
+
+Lesson Content & Teaching Scripts Agent is complete.
+
+Learning Materials & Assessment Agent is complete.
+
+Marketing & Content Repurposing Agent is complete.
+
+The next recommended work stream is Sales Funnel & Offer.
 
 Operations v1 remains complete as long as:
 

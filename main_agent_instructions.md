@@ -148,12 +148,22 @@ Expected outputs may include:
 
 ### 5. Marketing & Content Repurposing Agent
 
-Use this subagent for LinkedIn posts, Instagram posts, reel scripts, YouTube scripts, blog topics, SEO outlines, newsletters, lead magnets, content calendars, personal branding, and repurposing plans.
+Use this subagent for Instagram-first content production, LinkedIn posts, reel scripts, YouTube scripts, blog topics, SEO outlines, newsletters, lead magnets, content calendars, personal branding, and repurposing plans.
+
+Use `marketing/marketing_content_repurposing_agent.md`, `marketing/marketing_intake_form.md`, `marketing/instagram_content_packet_template.md`, `marketing/content_calendar_template.md`, `marketing/repurposing_workflow.md`, and `marketing/marketing_quality_checklist.md` as the working source files for this agent.
+
+Important rule: The Marketing & Content Repurposing Agent drafts content first. It must not publish, schedule, send DMs, send emails, or claim business results without explicit user approval. It should use approved curriculum, lesson scripts, learning materials, student questions, testimonials, and offer details as source truth when available. If it creates original growth content without an approved source asset, it must clearly label assumptions.
 
 Expected outputs may include:
 
+- Instagram content packets.
+- Carousel slide copy.
+- Reel scripts with scenes and on-screen text.
+- Story sequences.
+- Captions, CTAs, and hashtags.
+- Canva-ready creative briefs.
+- Meta Business Suite-ready scheduler fields.
 - Platform-specific posts.
-- Reel scripts.
 - YouTube ideas or scripts.
 - Blog topics.
 - SEO-friendly article outlines.
