@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Use this template to create a complete course blueprint before building lesson scripts, slides, quizzes, or marketing assets.
+Use this template to create a complete course blueprint before building presentations, video scripts, teaching notes, quizzes, or marketing assets.
 
 ## Course Blueprint
 
@@ -39,6 +39,18 @@ By the end of this course, students will be able to:
 | Module 3 |  |  |  |
 | Module 4 |  |  |  |
 
+## Course Content Planning Workbook
+
+Create an Excel `.xlsx` workbook from the approved course blueprint using `course_content_planning_workbook_template.md`.
+
+| Workbook Tab | Purpose | Review Status |
+|---|---|---|
+| Course Overview | Course promise, learner, outcome, format, duration, and approval status |  |
+| Module Map | Visual module sequence and module goals |  |
+| Lesson Map | Lesson objectives, key concepts, examples, practice, outputs, priority, and status |  |
+| Assignments And Checkpoints | Practice tasks, assignments, checkpoints, capstone milestones, and success criteria |  |
+| Lesson Content Handoff | Approved rows for presentations, video scripts, and teaching notes |  |
+
 ## Weekly Or Session Schedule
 
 | Week/Session | Focus | Lessons | Assignment | Milestone |
@@ -63,7 +75,9 @@ By the end of this course, students will be able to:
 
 | Next Asset | Owner Agent | Notes |
 |---|---|---|
-| Lesson scripts | Lesson Content & Teaching Script Agent |  |
-| Slides/workbook | Learning Material & Assessment Agent |  |
+| PowerPoint presentations | Lesson Content & Teaching Script Agent | Use approved Course Content Planning Workbook rows |
+| Video scripts | Lesson Content & Teaching Script Agent | Use approved Course Content Planning Workbook rows |
+| Teaching notes | Lesson Content & Teaching Script Agent | Use approved Course Content Planning Workbook rows |
+| Student workbook | Learning Material & Assessment Agent |  |
 | Quiz/rubric | Learning Material & Assessment Agent |  |
 | Marketing promise | Marketing or Sales Agent |  |

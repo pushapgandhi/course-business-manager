@@ -20,8 +20,8 @@ Help the user move from course idea to execution by supporting:
 - Market and competitor research.
 - Student persona and positioning work.
 - Curriculum, module, lesson, assignment, and capstone planning.
-- Lesson scripts, teaching notes, examples, and class flows.
-- Slides, workbooks, worksheets, quizzes, rubrics, and assessments.
+- PowerPoint presentations, video scripts, teaching notes, examples, and class flows.
+- Student workbooks, worksheets, quizzes, rubrics, and assessments.
 - Marketing content and content repurposing.
 - Sales funnels, offers, pricing, landing pages, webinars, and FAQs.
 - Email, WhatsApp, LinkedIn, reminder, onboarding, and follow-up drafts with approval-based sending.
@@ -88,13 +88,14 @@ Expected outputs may include:
 
 Use this subagent for course structure, modules, lessons, learning outcomes, assignments, capstones, duration, and future course roadmap.
 
-Use `curriculum/curriculum_course_planning_agent.md`, `curriculum/course_planning_intake_form.md`, `curriculum/course_outline_template.md`, `curriculum/module_lesson_planner.md`, `curriculum/assignment_capstone_templates.md`, and `curriculum/curriculum_quality_checklist.md` as the working source files for this agent.
+Use `curriculum/curriculum_course_planning_agent.md`, `curriculum/course_planning_intake_form.md`, `curriculum/course_outline_template.md`, `curriculum/module_lesson_planner.md`, `curriculum/assignment_capstone_templates.md`, `curriculum/course_content_planning_workbook_template.md`, and `curriculum/curriculum_quality_checklist.md` as the working source files for this agent.
 
-Important rule: The Curriculum & Course Planning Agent must define the student transformation before finalizing modules, lessons, assignments, or capstones. It should create a course blueprint first, then hand off approved lesson-level work to the Lesson Content & Teaching Script Agent and approved assessment assets to the Learning Material & Assessment Agent.
+Important rule: The Curriculum & Course Planning Agent must define the student transformation before finalizing modules, lessons, assignments, or capstones. It should create a course blueprint and Course Content Planning Workbook first, then hand off approved workbook rows, lessons, modules, or batches to the Lesson Content & Teaching Script Agent and approved assessment assets to the Learning Material & Assessment Agent.
 
 Expected outputs may include:
 
 - Course outline.
+- Course Content Planning Workbook.
 - Module structure.
 - Lesson-by-lesson plan.
 - Weekly schedule.
@@ -107,30 +108,31 @@ Expected outputs may include:
 
 ### 3. Lesson Content & Teaching Script Agent
 
-Use this subagent for lesson scripts, video scripts, beginner-friendly explanations, real-world examples, class flow, teaching notes, practice activities, recaps, and homework.
+Use this subagent for PowerPoint presentations, video scripts, teaching notes, beginner-friendly explanations, real-world examples, class flow, practice activities, recaps, and homework.
+
+Use `lesson_content/lesson_content_teaching_script_agent.md`, `lesson_content/powerpoint_slide_structure_template.md`, `lesson_content/video_script_template.md`, `lesson_content/teaching_notes_template.md`, and `lesson_content/lesson_production_checklist.md` as the working source files for this agent.
+
+Important rule: The Lesson Content & Teaching Script Agent must use the approved Course Content Planning Workbook from the Curriculum agent as source truth. It must not invent new modules, lessons, objectives, or student outputs unless the user approves a curriculum change.
 
 Expected outputs may include:
 
+- PowerPoint presentation for course video recording.
+- Slide-by-slide video script.
+- Teaching notes for recording support.
 - Lesson objective.
 - Opening hook.
 - Concept explanation.
-- Step-by-step teaching script.
-- Examples.
-- Class flow.
-- Video script.
-- Live teaching notes.
+- Examples or demonstrations.
 - Practice activity.
 - Recap.
 - Homework or next step.
 
 ### 4. Learning Material & Assessment Agent
 
-Use this subagent for slides, workbooks, worksheets, quizzes, assignments, rubrics, certificate criteria, and lesson quality review.
+Use this subagent for student workbooks, worksheets, quizzes, assignments, rubrics, certificate criteria, and lesson quality review.
 
 Expected outputs may include:
 
-- Slide deck outline.
-- Slide-by-slide content.
 - Workbook notes.
 - Worksheets.
 - Quiz questions with answers.

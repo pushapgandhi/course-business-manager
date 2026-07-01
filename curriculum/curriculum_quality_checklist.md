@@ -37,7 +37,9 @@ Use this checklist before approving a course blueprint or handing it off to less
 - Self-paced lessons are not overloaded.
 - Required tools and resources are named.
 - Student support needs are visible.
-- Handoff points to lesson scripts, slides, workbook, quizzes, or rubrics are clear.
+- The Course Content Planning Workbook includes Course Overview, Module Map, Lesson Map, Assignments And Checkpoints, and Lesson Content Handoff tabs.
+- Handoff points to PowerPoint presentations, video scripts, teaching notes, student workbooks, quizzes, or rubrics are clear.
+- Approved lesson rows contain enough detail for the Lesson Content agent to produce recording-ready assets.
 
 ## Common Fixes
 
@@ -49,6 +51,7 @@ Use this checklist before approving a course blueprint or handing it off to less
 | Course starts too advanced | Add prerequisites or a foundation module |
 | Capstone is vague | Define required deliverables and observable success criteria |
 | Course promise is broad | Narrow the target learner or outcome |
+| Workbook is not production-ready | Add missing lesson objectives, key concepts, examples, practice activities, status, priority, and handoff notes |
 
 ## Approval Summary Format
 
@@ -59,5 +62,6 @@ Curriculum quality review:
 - Gaps to fix:
 - Overload risk:
 - Sequencing risk:
+- Workbook ready for lesson production: Yes/No
 - Recommended next handoff:
 ```

@@ -10,9 +10,9 @@ Use it to build the project one work stream at a time.
 
 | Field | Current Value |
 |---|---|
-| Active Work Stream | Lesson Content & Teaching Scripts |
-| Current Milestone | Curriculum & Course Planning Agent complete |
-| Current Focus | Ready to build Lesson Content & Teaching Scripts workflow |
+| Active Work Stream | Learning Materials & Assessment |
+| Current Milestone | Lesson Content & Teaching Scripts Agent complete |
+| Current Focus | Ready to build Learning Materials & Assessment workflow |
 | Owner | User + Course Business Manager Agent |
 | Target Outcome | A simple project-management system that can be maintained by editing Markdown |
 
@@ -24,9 +24,9 @@ Use it to build the project one work stream at a time.
 | Build Communication Agent v1 work stream | Communication | High | Done | Email templates, WhatsApp templates, LinkedIn DM templates, CRM notes, approval checklist, sending tools | Communication Agent v1 implemented; use workflow, intake form, templates, and approval checklist |
 | Build Scheduling & Calendar Agent work stream | Scheduling | High | Done | Calendar, availability checker, conflict review, invite templates, reminder tracker | Scheduling & Calendar Agent implemented; use workflow, intake form, templates, approval checklist, and availability rules |
 | Build Student Support & Community work stream | Student Support | Medium | Done | Google Form/Sheet intake, support reply templates, community prompts, feedback forms, testimonial workflow | Student Support & Community Agent implemented; create the live Google Form/Sheet when ready to receive student questions |
-| Build Curriculum & Course Planning work stream | Curriculum | Medium | Done | Course outline doc, module planner, learning outcome framework, schedule planner | Curriculum & Course Planning Agent implemented; use workflow, intake form, templates, and quality checklist |
-| Build Lesson Content & Teaching Scripts work stream | Lesson Content | Medium | Not started | Lesson script template, examples library, video script doc, teaching notes | Create lesson script, class flow, examples, recap, and homework workflow |
-| Build Learning Materials & Assessment work stream | Learning Materials | Medium | Not started | Slides tool, workbook/doc tool, quiz builder, rubric template, certificate criteria | Create slides, workbook, quiz, rubric, assignment, and certificate workflow |
+| Build Curriculum & Course Planning work stream | Curriculum | Medium | Done | Course outline doc, module planner, learning outcome framework, Excel workbook template | Curriculum & Course Planning Agent implemented; use workflow, intake form, templates, workbook template, and quality checklist |
+| Build Lesson Content & Teaching Scripts work stream | Lesson Content | Medium | Done | Approved curriculum workbook, PowerPoint template, video script template, teaching notes template, production checklist | Lesson Content & Teaching Scripts Agent implemented; use approved workbook rows to create presentations, video scripts, and teaching notes |
+| Build Learning Materials & Assessment work stream | Learning Materials | Medium | Not started | Student workbook/doc tool, quiz builder, rubric template, certificate criteria | Create student workbook, worksheet, quiz, rubric, assignment, and certificate workflow |
 | Build Marketing & Content Repurposing work stream | Marketing | Medium | Not started | Content calendar, LinkedIn tools, Instagram tools, YouTube tools, SEO tool, newsletter tool | Create content calendar, platform posts, scripts, newsletters, and repurposing workflow |
 | Build Sales Funnel & Offer work stream | Sales | Medium | Not started | Landing page builder, pricing model, webinar tool, checkout platform, FAQ tracker | Create offer, pricing, funnel, landing page, webinar, objections, and FAQ workflow |
 | Build Course Strategy & Market Research work stream | Strategy | Medium | Not started | Web research, competitor research, survey/forms, positioning canvas, pricing research | Create validation, audience, competitor, positioning, promise, and pricing workflow |
@@ -48,7 +48,7 @@ Create the operating structure for the project before starting the more complex 
 | 3 | Build Scheduling & Calendar Agent work stream | Calendar and meeting management system | Yes |
 | 4 | Build Student Support & Community work stream | Student support and engagement system | Yes |
 | 5 | Build Curriculum & Course Planning work stream | Course planning system | Yes |
-| 6 | Build Lesson Content & Teaching Scripts work stream | Lesson creation system | No |
+| 6 | Build Lesson Content & Teaching Scripts work stream | Lesson creation system | Yes |
 | 7 | Build Learning Materials & Assessment work stream | Materials and assessment system | No |
 | 8 | Build Marketing & Content Repurposing work stream | Marketing content system | No |
 | 9 | Build Sales Funnel & Offer work stream | Sales conversion system | No |
@@ -72,13 +72,14 @@ Create the operating structure for the project before starting the more complex 
 | Confirm next work stream after Operations v1 | Start Communication Agent v1 or adjust the roadmap | User | Approved |
 | Confirm Scheduling & Calendar as a separate agent | Keep calendar updates separate from communication drafting | User | Approved |
 | Confirm Student Support v1 platform approach | Use Google Form/Sheet intake with manual replies or Gmail approval handoff | User | Approved |
-| Confirm Curriculum v1 planning approach | Use a course blueprint before lesson scripts, slides, assignments, or marketing assets | User | Approved |
+| Confirm Curriculum v1 planning approach | Use a course blueprint and Course Content Planning Workbook before lesson production, assessments, or marketing assets | User | Approved |
 
 ## Recent Updates
 
 | Date | Update |
 |---|---|
 | 2026-07-01 | Implemented Curriculum & Course Planning Agent with course planning intake, course outline template, module and lesson planner, assignment and capstone templates, and curriculum quality checklist. |
+| 2026-07-01 | Added Course Content Planning Workbook template and implemented Lesson Content & Teaching Scripts Agent with PowerPoint, video script, teaching notes, and production checklist templates. |
 | 2026-06-22 | Implemented Student Support & Community Agent with Google Form/Sheet intake, copy-ready replies, community prompts, feedback collection, testimonial workflow, and approval checklist. |
 | 2026-06-22 | Updated Scheduling & Calendar workflow so scheduled or rescheduled meetings also send a separate recipient email with the agenda and meeting link. |
 | 2026-06-19 | Implemented Scheduling & Calendar Agent workflow, intake form, templates, approval checklist, and availability rules. |
@@ -106,6 +107,6 @@ Use these priorities:
 
 ## Next Action
 
-Start with: **Build Lesson Content & Teaching Scripts work stream**.
+Start with: **Build Learning Materials & Assessment work stream**.
 
-The first output should be a lesson scripting workflow with lesson objective, class flow, explanation, examples, practice, recap, and homework planning.
+The first output should be a learning material and assessment workflow with student workbooks, worksheets, quizzes, rubrics, assignments, and certificate criteria.

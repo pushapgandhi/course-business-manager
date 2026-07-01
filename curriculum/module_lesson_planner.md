@@ -42,6 +42,8 @@ Student output:
 Common mistakes:
 Support note:
 Handoff to Lesson Content Agent:
+Workbook handoff ID:
+Workbook source row approved: Yes/No
 ```
 
 ## Sequencing Checklist
@@ -52,3 +54,5 @@ Handoff to Lesson Content Agent:
 - Is the module small enough for the available time?
 - Are any lessons actually assignments, examples, or bonus content instead of core lessons?
 - Is there a clear handoff from this module to the next module?
+- Is each lesson ready to become an approved row in the Course Content Planning Workbook?
+- Does each approved row give Lesson Content enough information to create a presentation, video script, and teaching notes?

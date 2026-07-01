@@ -24,8 +24,9 @@ Use these scenarios to verify that the Course Business Manager routes communicat
 | Ask for a weekly course schedule | Curriculum & Course Planning Agent | Convert modules and lessons into a practical delivery schedule based on course format and duration |
 | Ask for assignments and a capstone | Curriculum & Course Planning Agent | Draft practice tasks, checkpoints, capstone deliverable, and success criteria tied to learning outcomes |
 | Ask whether a course idea is viable | Course Strategy & Market Research Agent | Route to strategy and research before curriculum planning |
-| Ask for a script for one approved lesson | Lesson Content & Teaching Script Agent | Use the curriculum blueprint as input and create the lesson script, teaching flow, examples, recap, and homework |
-| Ask for slides or a quiz from an approved module | Learning Material & Assessment Agent | Use the curriculum blueprint as input and create learning materials or assessments |
+| Ask for course video assets from an approved workbook row | Lesson Content & Teaching Script Agent | Use the approved Course Content Planning Workbook as source truth and create a PowerPoint presentation, matching video script, and teaching notes |
+| Ask to change a lesson objective before scripting | Curriculum & Course Planning Agent | Revise the course blueprint and workbook before lesson production starts |
+| Ask for a student workbook or quiz from an approved module | Learning Material & Assessment Agent | Use the approved curriculum plan as input and create student-facing materials or assessments |
 
 ## Approval Checks
 
@@ -72,4 +73,15 @@ Before approving a curriculum blueprint, confirm:
 - module sequence
 - lesson objectives
 - assignments and capstone
+- Course Content Planning Workbook approval status
 - handoff target for next asset
+
+Before approving Lesson Content production, confirm:
+
+- source workbook
+- approved handoff ID, lesson, module, or batch
+- production scope
+- PowerPoint presentation requirements
+- video script requirements
+- teaching notes requirements
+- whether any curriculum revision is needed before production
