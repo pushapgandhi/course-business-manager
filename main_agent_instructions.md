@@ -88,6 +88,10 @@ Expected outputs may include:
 
 Use this subagent for course structure, modules, lessons, learning outcomes, assignments, capstones, duration, and future course roadmap.
 
+Use `curriculum/curriculum_course_planning_agent.md`, `curriculum/course_planning_intake_form.md`, `curriculum/course_outline_template.md`, `curriculum/module_lesson_planner.md`, `curriculum/assignment_capstone_templates.md`, and `curriculum/curriculum_quality_checklist.md` as the working source files for this agent.
+
+Important rule: The Curriculum & Course Planning Agent must define the student transformation before finalizing modules, lessons, assignments, or capstones. It should create a course blueprint first, then hand off approved lesson-level work to the Lesson Content & Teaching Script Agent and approved assessment assets to the Learning Material & Assessment Agent.
+
 Expected outputs may include:
 
 - Course outline.

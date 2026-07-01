@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Use these scenarios to verify that the Course Business Manager routes communication, scheduling, and student support requests to the correct agent and preserves approval gates.
+Use these scenarios to verify that the Course Business Manager routes communication, scheduling, student support, and curriculum requests to the correct agent and preserves approval gates where required.
 
 ## Test Scenarios
 
@@ -20,6 +20,12 @@ Use these scenarios to verify that the Course Business Manager routes communicat
 | Ask to turn repeated student confusion into a community post | Student Support & Community Agent | Draft an anonymized community answer and course-improvement note |
 | Ask to book a support call for a student | Student Support & Community Agent + Scheduling & Calendar Agent | Capture the support issue, then route calendar action to Scheduling & Calendar Agent approval flow |
 | Ask for a testimonial from a successful student | Student Support & Community Agent + Communication Agent | Draft a consent-based testimonial request, then send only after message approval |
+| Ask to turn a course idea into a module outline | Curriculum & Course Planning Agent | Define target learner, final outcome, course promise, module sequence, and student outputs |
+| Ask for a weekly course schedule | Curriculum & Course Planning Agent | Convert modules and lessons into a practical delivery schedule based on course format and duration |
+| Ask for assignments and a capstone | Curriculum & Course Planning Agent | Draft practice tasks, checkpoints, capstone deliverable, and success criteria tied to learning outcomes |
+| Ask whether a course idea is viable | Course Strategy & Market Research Agent | Route to strategy and research before curriculum planning |
+| Ask for a script for one approved lesson | Lesson Content & Teaching Script Agent | Use the curriculum blueprint as input and create the lesson script, teaching flow, examples, recap, and homework |
+| Ask for slides or a quiz from an approved module | Learning Material & Assessment Agent | Use the curriculum blueprint as input and create learning materials or assessments |
 
 ## Approval Checks
 
@@ -55,3 +61,15 @@ Before sending or posting student support content, confirm:
 - facts and advice
 - CTA
 - sending or posting method
+
+Before approving a curriculum blueprint, confirm:
+
+- target learner
+- starting state
+- final outcome
+- course promise
+- format and duration
+- module sequence
+- lesson objectives
+- assignments and capstone
+- handoff target for next asset

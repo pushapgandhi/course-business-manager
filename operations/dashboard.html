@@ -84,6 +84,20 @@
       font-weight: 700;
     }
 
+    .progress-wrap {
+      background: #e5e9f0;
+      border-radius: 999px;
+      height: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .progress-bar {
+      background: var(--green);
+      height: 100%;
+      width: 0;
+    }
+
     .next-task {
       border-left: 4px solid var(--blue);
       padding: 16px 18px;
@@ -139,6 +153,47 @@
 
     .ops-list li {
       margin-bottom: 8px;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .resource-card {
+      padding: 16px;
+    }
+
+    .resource-card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    .resource-card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .resource-links {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .resource-links a {
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .resource-links a:hover {
+      text-decoration: underline;
     }
 
     .kanban {
@@ -247,6 +302,7 @@
 
       .summary,
       .ops-grid,
+      .resource-grid,
       .status-strip,
       .kanban {
         grid-template-columns: 1fr;
@@ -269,6 +325,9 @@
       <div class="metric">
         <div class="metric-label">Done</div>
         <div class="metric-value" id="doneTasks">0</div>
+        <div class="progress-wrap" aria-label="Completion progress">
+          <div class="progress-bar" id="completionBar"></div>
+        </div>
       </div>
       <div class="metric">
         <div class="metric-label">In Progress</div>
@@ -287,15 +346,15 @@
     <section class="status-strip" aria-label="Operations status">
       <div class="panel status-item">
         <div class="status-label">Active Stream</div>
-        <div class="status-value">Curriculum & Course Planning</div>
+        <div class="status-value">Lesson Content & Teaching Scripts</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Focus</div>
-        <div class="status-value">Ready to build course outline, module, lesson, assignment, and capstone workflow</div>
+        <div class="status-value">Ready to build lesson objective, class flow, explanation, examples, practice, recap, and homework workflow</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Milestone</div>
-        <div class="status-value">Student Support & Community Agent complete</div>
+        <div class="status-value">Curriculum & Course Planning Agent complete</div>
       </div>
     </section>
 
@@ -316,6 +375,22 @@
       <div class="panel">
         <h2>Recent Updates</h2>
         <ul class="ops-list" id="updateList"></ul>
+      </div>
+    </section>
+
+    <section class="resource-grid" aria-label="Implemented agent resources">
+      <div class="panel resource-card">
+        <h2>Implemented Agents</h2>
+        <ul class="ops-list" id="implementedAgentList"></ul>
+      </div>
+      <div class="panel resource-card">
+        <h2>Curriculum Resources</h2>
+        <p>Use these files to turn a course idea into a complete course blueprint before lesson scripting.</p>
+        <ul class="resource-links" id="curriculumResourceList"></ul>
+      </div>
+      <div class="panel resource-card">
+        <h2>Next Handoff</h2>
+        <p id="nextHandoff"></p>
       </div>
     </section>
 
@@ -377,9 +452,9 @@
         task: "Build Curriculum & Course Planning work stream",
         workStream: "Curriculum",
         priority: "Medium",
-        status: "Not started",
+        status: "Done",
         requiredTool: "Course outline doc, module planner, learning outcome framework, schedule planner",
-        nextAction: "Create course outline, module, lesson, assignment, and capstone workflow"
+        nextAction: "Curriculum & Course Planning Agent implemented; use workflow, intake form, templates, and quality checklist"
       },
       {
         task: "Build Lesson Content & Teaching Scripts work stream",
@@ -449,9 +524,11 @@
     const approvals = [
       "Communication Agent v1 approved.",
       "Scheduling & Calendar approved as a separate agent.",
-      "Student Support v1 platform approved: Google Form/Sheet intake with manual replies or Gmail approval handoff."
+      "Student Support v1 platform approved: Google Form/Sheet intake with manual replies or Gmail approval handoff.",
+      "Curriculum v1 planning approach approved: create a course blueprint before lesson scripts, slides, assignments, or marketing assets."
     ];
     const updates = [
+      "2026-07-01: Implemented Curriculum & Course Planning Agent with course planning intake, course outline template, module and lesson planner, assignment and capstone templates, and curriculum quality checklist.",
       "2026-06-22: Implemented Student Support & Community Agent with Google Form/Sheet intake, copy-ready replies, community prompts, feedback collection, testimonial workflow, and approval checklist.",
       "2026-06-22: Updated Scheduling & Calendar workflow so scheduled or rescheduled meetings also send a separate recipient email with the agenda and meeting link.",
       "2026-06-19: Implemented Scheduling & Calendar Agent workflow, intake form, templates, approval checklist, and availability rules.",
@@ -459,6 +536,32 @@
       "2026-06-19: Updated roadmap to Communication Agent v1 with approval-based sending and added Scheduling & Calendar as a separate future work stream.",
       "2026-06-19: User approved Operations v1 as complete. Communication Agent v1 is now the next recommended work stream.",
       "2026-06-15: Added lightweight Operations v1 workflow, task board sections, and dashboard summary."
+    ];
+    const curriculumResources = [
+      {
+        label: "Curriculum Agent Workflow",
+        href: "../curriculum/curriculum_course_planning_agent.md"
+      },
+      {
+        label: "Course Planning Intake",
+        href: "../curriculum/course_planning_intake_form.md"
+      },
+      {
+        label: "Course Outline Template",
+        href: "../curriculum/course_outline_template.md"
+      },
+      {
+        label: "Module & Lesson Planner",
+        href: "../curriculum/module_lesson_planner.md"
+      },
+      {
+        label: "Assignment & Capstone Templates",
+        href: "../curriculum/assignment_capstone_templates.md"
+      },
+      {
+        label: "Curriculum Quality Checklist",
+        href: "../curriculum/curriculum_quality_checklist.md"
+      }
     ];
 
     function priorityClass(priority) {
@@ -482,6 +585,7 @@
       document.getElementById("inProgressTasks").textContent = inProgress;
       document.getElementById("remainingTasks").textContent = total - done;
       document.getElementById("highPriorityTasks").textContent = high;
+      document.getElementById("completionBar").style.width = `${Math.round((done / total) * 100)}%`;
     }
 
     function renderNextTask() {
@@ -547,11 +651,33 @@
         .join("");
     }
 
+    function renderImplementedAgents() {
+      const completed = tasks
+        .filter((task) => task.status === "Done")
+        .map((task) => `${task.workStream}: ${task.nextAction}`);
+
+      renderList("implementedAgentList", completed);
+    }
+
+    function renderCurriculumResources() {
+      document.getElementById("curriculumResourceList").innerHTML = curriculumResources
+        .map((resource) => `<li><a href="${resource.href}">${resource.label}</a></li>`)
+        .join("");
+    }
+
+    function renderNextHandoff() {
+      document.getElementById("nextHandoff").textContent =
+        "Build the Lesson Content & Teaching Scripts workflow next, using approved curriculum blueprints as the input for lesson objectives, explanations, examples, class flow, practice, recap, and homework.";
+    }
+
     renderSummary();
     renderNextTask();
     renderList("riskList", risks);
     renderList("approvalList", approvals);
     renderList("updateList", updates);
+    renderImplementedAgents();
+    renderCurriculumResources();
+    renderNextHandoff();
     renderKanban();
     renderTable();
   </script>
