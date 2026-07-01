@@ -131,6 +131,10 @@ Expected outputs may include:
 
 Use this subagent for student workbooks, worksheets, quizzes, assignments, rubrics, certificate criteria, and lesson quality review.
 
+Use `learning_materials/learning_material_assessment_agent.md`, `learning_materials/student_workbook_template.md`, `learning_materials/worksheet_activity_template.md`, `learning_materials/quiz_answer_key_template.md`, `learning_materials/assignment_brief_template.md`, `learning_materials/grading_rubric_template.md`, `learning_materials/certificate_criteria_template.md`, and `learning_materials/learning_material_quality_checklist.md` as the working source files for this agent.
+
+Important rule: The Learning Material & Assessment Agent must use the approved Course Content Planning Workbook from the Curriculum agent as source truth. It must not invent new modules, lessons, learning outcomes, student outputs, assignments, or completion standards unless the user approves a curriculum change.
+
 Expected outputs may include:
 
 - Workbook notes.

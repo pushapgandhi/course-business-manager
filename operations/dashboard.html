@@ -346,15 +346,15 @@
     <section class="status-strip" aria-label="Operations status">
       <div class="panel status-item">
         <div class="status-label">Active Stream</div>
-        <div class="status-value">Learning Materials & Assessment</div>
+        <div class="status-value">Marketing & Content Repurposing</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Focus</div>
-        <div class="status-value">Ready to build student workbook, worksheet, quiz, rubric, assignment, and certificate workflow</div>
+        <div class="status-value">Ready to build content calendar, platform posts, scripts, newsletters, and repurposing workflow</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Milestone</div>
-        <div class="status-value">Lesson Content & Teaching Scripts Agent complete</div>
+        <div class="status-value">Learning Materials & Assessment Agent complete</div>
       </div>
     </section>
 
@@ -468,9 +468,9 @@
         task: "Build Learning Materials & Assessment work stream",
         workStream: "Learning Materials",
         priority: "Medium",
-        status: "Not started",
+        status: "Done",
         requiredTool: "Student workbook/doc tool, quiz builder, rubric template, certificate criteria",
-        nextAction: "Create student workbook, worksheet, quiz, rubric, assignment, and certificate workflow"
+        nextAction: "Learning Materials & Assessment Agent implemented; use workflow, templates, and quality checklist"
       },
       {
         task: "Build Marketing & Content Repurposing work stream",
@@ -528,6 +528,7 @@
       "Curriculum v1 planning approach approved: create a course blueprint and Course Content Planning Workbook before lesson production, assessments, or marketing assets."
     ];
     const updates = [
+      "2026-07-01: Implemented Learning Materials & Assessment Agent with student workbook, worksheet, quiz, assignment, rubric, certificate criteria, and quality checklist templates.",
       "2026-07-01: Added Course Content Planning Workbook template and implemented Lesson Content & Teaching Scripts Agent with PowerPoint, video script, teaching notes, and production checklist templates.",
       "2026-07-01: Implemented Curriculum & Course Planning Agent with course planning intake, course outline template, module and lesson planner, assignment and capstone templates, and curriculum quality checklist.",
       "2026-06-22: Implemented Student Support & Community Agent with Google Form/Sheet intake, copy-ready replies, community prompts, feedback collection, testimonial workflow, and approval checklist.",
@@ -672,7 +673,7 @@
 
     function renderNextHandoff() {
       document.getElementById("nextHandoff").textContent =
-        "Build the Learning Materials & Assessment workflow next, using approved curriculum plans and produced lesson assets as the input for student workbooks, worksheets, quizzes, rubrics, assignments, and certificate criteria.";
+        "Build the Marketing & Content Repurposing workflow next, using approved curriculum, lesson assets, and student-facing materials as inputs for content calendars, platform posts, scripts, newsletters, and repurposing plans.";
     }
 
     renderSummary();
