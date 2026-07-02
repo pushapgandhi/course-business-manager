@@ -346,15 +346,15 @@
     <section class="status-strip" aria-label="Operations status">
       <div class="panel status-item">
         <div class="status-label">Active Stream</div>
-        <div class="status-value">Marketing & Content Repurposing</div>
+        <div class="status-value">Sales Funnel & Offer</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Focus</div>
-        <div class="status-value">Ready to build Sales Funnel & Offer workflow</div>
+        <div class="status-value">Ready to build Course Strategy & Market Research workflow</div>
       </div>
       <div class="panel status-item">
         <div class="status-label">Current Milestone</div>
-        <div class="status-value">Marketing & Content Repurposing Agent complete</div>
+        <div class="status-value">Sales Funnel & Offer Agent complete</div>
       </div>
     </section>
 
@@ -384,8 +384,8 @@
         <ul class="ops-list" id="implementedAgentList"></ul>
       </div>
       <div class="panel resource-card">
-        <h2>Curriculum Resources</h2>
-        <p>Use these files to turn a course idea into a complete course blueprint and approved workbook before lesson production.</p>
+        <h2>Key Resources</h2>
+        <p>Use these files to plan curriculum and build blueprint-first sales assets before public launch.</p>
         <ul class="resource-links" id="curriculumResourceList"></ul>
       </div>
       <div class="panel resource-card">
@@ -484,9 +484,9 @@
         task: "Build Sales Funnel & Offer work stream",
         workStream: "Sales",
         priority: "Medium",
-        status: "Not started",
-        requiredTool: "Landing page builder, pricing model, webinar tool, checkout platform, FAQ tracker",
-        nextAction: "Create offer, pricing, funnel, landing page, webinar, objections, and FAQ workflow"
+        status: "Done",
+        requiredTool: "Offer builder, pricing template, funnel map, landing page copy template, webinar outline, checkout requirements, FAQ tracker, launch checklist",
+        nextAction: "Sales Funnel & Offer Agent implemented; use blueprint-first workflow for offers, pricing, funnels, landing page copy, checkout requirements, objections, FAQ, and launch readiness"
       },
       {
         task: "Build Course Strategy & Market Research work stream",
@@ -528,6 +528,7 @@
       "Curriculum v1 planning approach approved: create a course blueprint and Course Content Planning Workbook before lesson production, assessments, or marketing assets."
     ];
     const updates = [
+      "2026-07-01: Implemented Sales Funnel & Offer Agent with blueprint-first offer, pricing, funnel, landing page, webinar, checkout, objection, FAQ, and launch readiness templates.",
       "2026-07-01: Implemented Marketing & Content Repurposing Agent with Instagram-first content packets, intake, calendar, repurposing workflow, scheduler fields, and quality checklist.",
       "2026-07-01: Started Marketing & Content Repurposing Agent implementation with Instagram-first content packets, intake, calendar, repurposing workflow, and quality checklist.",
       "2026-07-01: Implemented Learning Materials & Assessment Agent with student workbook, worksheet, quiz, assignment, rubric, certificate criteria, and quality checklist templates.",
@@ -569,6 +570,36 @@
       {
         label: "Curriculum Quality Checklist",
         href: "../curriculum/curriculum_quality_checklist.md"
+      }
+    ];
+    const salesResources = [
+      {
+        label: "Sales Agent Workflow",
+        href: "../sales/sales_funnel_offer_agent.md"
+      },
+      {
+        label: "Offer Builder Template",
+        href: "../sales/offer_builder_template.md"
+      },
+      {
+        label: "Pricing Tiers Template",
+        href: "../sales/pricing_tiers_template.md"
+      },
+      {
+        label: "Funnel Map Template",
+        href: "../sales/funnel_map_template.md"
+      },
+      {
+        label: "Landing Page Copy Template",
+        href: "../sales/landing_page_copy_template.md"
+      },
+      {
+        label: "Checkout Copy Template",
+        href: "../sales/checkout_copy_template.md"
+      },
+      {
+        label: "Launch Readiness Checklist",
+        href: "../sales/launch_readiness_checklist.md"
       }
     ];
 
@@ -668,14 +699,16 @@
     }
 
     function renderCurriculumResources() {
-      document.getElementById("curriculumResourceList").innerHTML = curriculumResources
+      const resources = curriculumResources.concat(salesResources);
+
+      document.getElementById("curriculumResourceList").innerHTML = resources
         .map((resource) => `<li><a href="${resource.href}">${resource.label}</a></li>`)
         .join("");
     }
 
     function renderNextHandoff() {
       document.getElementById("nextHandoff").textContent =
-        "Build the Sales Funnel & Offer workflow next, using approved strategy, curriculum, lesson assets, learning materials, and marketing content as inputs for offer, pricing, funnel, landing page, webinar, objections, and FAQ assets.";
+        "Build the Course Strategy & Market Research workflow next, using research, validation, audience, competitor, positioning, course promise, and pricing direction assets as inputs for future curriculum, marketing, and sales decisions.";
     }
 
     renderSummary();

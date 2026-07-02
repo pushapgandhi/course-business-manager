@@ -10,9 +10,9 @@ Use it to build the project one work stream at a time.
 
 | Field | Current Value |
 |---|---|
-| Active Work Stream | Marketing & Content Repurposing |
-| Current Milestone | Marketing & Content Repurposing Agent complete |
-| Current Focus | Ready to build Sales Funnel & Offer workflow |
+| Active Work Stream | Sales Funnel & Offer |
+| Current Milestone | Sales Funnel & Offer Agent complete |
+| Current Focus | Ready to build Course Strategy & Market Research workflow |
 | Owner | User + Course Business Manager Agent |
 | Target Outcome | A simple project-management system that can be maintained by editing Markdown |
 
@@ -28,7 +28,7 @@ Use it to build the project one work stream at a time.
 | Build Lesson Content & Teaching Scripts work stream | Lesson Content | Medium | Done | Approved curriculum workbook, PowerPoint template, video script template, teaching notes template, production checklist | Lesson Content & Teaching Scripts Agent implemented; use approved workbook rows to create presentations, video scripts, and teaching notes |
 | Build Learning Materials & Assessment work stream | Learning Materials | Medium | Done | Student workbook/doc tool, quiz builder, rubric template, certificate criteria | Learning Materials & Assessment Agent implemented; use workflow, templates, and quality checklist |
 | Build Marketing & Content Repurposing work stream | Marketing | Medium | Done | Content calendar, LinkedIn tools, Instagram tools, YouTube tools, SEO tool, newsletter tool | Marketing & Content Repurposing Agent implemented; use Instagram-first content packets, Canva-ready briefs, scheduler fields, and repurposing workflow |
-| Build Sales Funnel & Offer work stream | Sales | Medium | Not started | Landing page builder, pricing model, webinar tool, checkout platform, FAQ tracker | Create offer, pricing, funnel, landing page, webinar, objections, and FAQ workflow |
+| Build Sales Funnel & Offer work stream | Sales | Medium | Done | Offer builder, pricing template, funnel map, landing page copy template, webinar outline, checkout requirements, FAQ tracker, launch checklist | Sales Funnel & Offer Agent implemented; use blueprint-first workflow for offers, pricing, funnels, landing page copy, checkout requirements, objections, FAQ, and launch readiness |
 | Build Course Strategy & Market Research work stream | Strategy | Medium | Not started | Web research, competitor research, survey/forms, positioning canvas, pricing research | Create validation, audience, competitor, positioning, promise, and pricing workflow |
 | Build Analytics & Business Intelligence work stream | Analytics | Low | Not started | Spreadsheet/dashboard tool, sales data, lead data, campaign metrics, feedback analysis | Create KPI dashboard, reports, conversion analysis, feedback insights, and recommendations workflow |
 | Build Agent-Building & Improvement work stream | Agent-Building | Low | Not started | Instruction files, routing logic, test prompts, evaluation checklist, version control | Create improvement workflow for instructions, routing, tests, and evaluation |
@@ -51,7 +51,7 @@ Create the operating structure for the project before starting the more complex 
 | 6 | Build Lesson Content & Teaching Scripts work stream | Lesson creation system | Yes |
 | 7 | Build Learning Materials & Assessment work stream | Materials and assessment system | Yes |
 | 8 | Build Marketing & Content Repurposing work stream | Marketing content system | Yes |
-| 9 | Build Sales Funnel & Offer work stream | Sales conversion system | No |
+| 9 | Build Sales Funnel & Offer work stream | Sales conversion system | Yes |
 | 10 | Build Course Strategy & Market Research work stream | Research and positioning system | No |
 | 11 | Build Analytics & Business Intelligence work stream | Reporting and insight system | No |
 | 12 | Build Agent-Building & Improvement work stream | Agent improvement system | No |
@@ -78,6 +78,7 @@ Create the operating structure for the project before starting the more complex 
 
 | Date | Update |
 |---|---|
+| 2026-07-01 | Implemented Sales Funnel & Offer Agent with blueprint-first offer, pricing, funnel, landing page, webinar, checkout, objection, FAQ, and launch readiness templates. |
 | 2026-07-01 | Implemented Marketing & Content Repurposing Agent with Instagram-first content packets, intake, calendar, repurposing workflow, scheduler fields, and quality checklist. |
 | 2026-07-01 | Started Marketing & Content Repurposing Agent implementation with Instagram-first content packets, intake, calendar, repurposing workflow, and quality checklist. |
 | 2026-07-01 | Implemented Learning Materials & Assessment Agent with student workbook, worksheet, quiz, assignment, rubric, certificate criteria, and quality checklist templates. |
@@ -110,6 +111,6 @@ Use these priorities:
 
 ## Next Action
 
-Start with: **Build Sales Funnel & Offer work stream**.
+Start with: **Build Course Strategy & Market Research work stream**.
 
-The first output should be a sales funnel and offer workflow with course offer, pricing, funnel map, landing page, webinar, objections, and FAQ templates.
+The first output should be a strategy and research workflow with validation, audience, competitor, positioning, course promise, and pricing research templates.

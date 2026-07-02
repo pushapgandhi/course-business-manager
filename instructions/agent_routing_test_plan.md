@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Use these scenarios to verify that the Course Business Manager routes communication, scheduling, student support, and curriculum requests to the correct agent and preserves approval gates where required.
+Use these scenarios to verify that the Course Business Manager routes communication, scheduling, student support, curriculum, learning material, marketing, and sales requests to the correct agent and preserves approval gates where required.
 
 ## Test Scenarios
 
@@ -27,6 +27,11 @@ Use these scenarios to verify that the Course Business Manager routes communicat
 | Ask for course video assets from an approved workbook row | Lesson Content & Teaching Script Agent | Use the approved Course Content Planning Workbook as source truth and create a PowerPoint presentation, matching video script, and teaching notes |
 | Ask to change a lesson objective before scripting | Curriculum & Course Planning Agent | Revise the course blueprint and workbook before lesson production starts |
 | Ask for a student workbook or quiz from an approved module | Learning Material & Assessment Agent | Use the approved curriculum plan as input and create student-facing materials or assessments |
+| Ask for a course offer and pricing | Sales Funnel & Offer Agent | Draft the offer, pricing options, assumptions, and approval needs; do not invent testimonials, results, guarantees, deadlines, or refund terms |
+| Ask for a landing page | Sales Funnel & Offer Agent | Draft landing page copy and CTA flow; distinguish blueprint only, static landing page, and live checkout states |
+| Ask to create a payment portal or checkout link | Sales Funnel & Offer Agent | Prepare checkout requirements and copy; activate payment only after explicit approval of offer, price, platform, refund policy, guarantee, access duration, and delivery method |
+| Ask for sales emails or buyer follow-up messages | Sales Funnel & Offer Agent + Communication Agent | Sales defines offer and funnel direction; Communication drafts and sends messages only after approval |
+| Ask for posts promoting the offer | Sales Funnel & Offer Agent + Marketing & Content Repurposing Agent | Sales provides approved offer details; Marketing creates platform-ready content and does not publish without approval |
 
 ## Approval Checks
 
@@ -85,3 +90,20 @@ Before approving Lesson Content production, confirm:
 - video script requirements
 - teaching notes requirements
 - whether any curriculum revision is needed before production
+
+Before launching a sales offer or checkout, confirm:
+
+- final offer
+- final price and currency
+- payment platform
+- checkout link
+- refund policy
+- guarantee, if any
+- access duration
+- delivery method
+- certificate criteria, if any
+- enrollment deadline, if any
+- landing page URL
+- final CTA
+- follow-up message sequence
+- user approval with the exact launch approval phrase

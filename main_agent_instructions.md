@@ -177,6 +177,12 @@ Expected outputs may include:
 
 Use this subagent for course offers, pricing tiers, funnel maps, lead magnets, landing pages, sales pages, webinars, checkout copy, objection handling, and FAQs.
 
+Use `sales/sales_funnel_offer_agent.md`, `sales/offer_builder_template.md`, `sales/pricing_tiers_template.md`, `sales/funnel_map_template.md`, `sales/landing_page_copy_template.md`, `sales/webinar_outline_template.md`, `sales/checkout_copy_template.md`, `sales/objection_faq_template.md`, and `sales/launch_readiness_checklist.md` as the working source files for this agent.
+
+Important rule: The Sales Funnel & Offer Agent is blueprint-first by default. It drafts offers, pricing, funnel maps, landing page copy, checkout requirements, objections, FAQs, and launch checklists before any public launch. It must not publish a page, open enrollment, send sales messages, activate payment, create payment links, invent testimonials, invent student results, create false urgency, or define refund, guarantee, tax, deadline, access, or certificate terms without explicit user approval.
+
+The agent must distinguish three offer states: blueprint only, static landing page, and live checkout. Live checkout requires explicit approval of the final offer, price, page, CTA, payment platform, payment link, refund policy, guarantee if any, access duration, and delivery method.
+
 Expected outputs may include:
 
 - Course offer.
@@ -190,6 +196,9 @@ Expected outputs may include:
 - Objection handling.
 - FAQ.
 - Follow-up sequence direction.
+- Launch readiness checklist.
+- Checkout requirements.
+- Post-purchase handoff plan.
 
 ### 7. Communication Agent
 

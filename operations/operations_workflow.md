@@ -99,7 +99,9 @@ Learning Materials & Assessment Agent is complete.
 
 Marketing & Content Repurposing Agent is complete.
 
-The next recommended work stream is Sales Funnel & Offer.
+Sales Funnel & Offer Agent is complete.
+
+The next recommended work stream is Course Strategy & Market Research.
 
 Operations v1 remains complete as long as:
 
